@@ -1,13 +1,17 @@
 body {
   display: flex;
   justify-content: center;
+  margin-top: 0px;
 }
-
+.cosa{
+  margin-right: 100px;
+  font-size: 18px;
+}
 .contenedor {
   display: grid;
   grid-template-columns: 10% 90%;
   justify-content: center;
-  width: 70%;
+  width: 90%;
   margin: 0;
   height: 0%;
 }
@@ -77,17 +81,20 @@ body {
 .datos-factura {
   color: #00b4aa;
   text-align: right;
+  font-size: 20px;
 }
 
 .datos-factura h1 {
   font-size: 50px;
   margin-bottom: 8px;
   letter-spacing: 5px;
-  font-weight: bold;
+  font-weight: 900;
+  margin-right: 40px;
+  font-size: 60px;
 }
 
 .datos-factura p {
-  font-size: 14px;
+  font-size: 17px;
   margin: 2px 0;
   color: #333;
   margin-right: 40px;
@@ -132,27 +139,30 @@ body {
   align-items: flex-start;
   font-family: Arial, sans-serif;
   margin: 100px 30px 30px;
+
 }
 
 .cliente h2 {
   color: #00b4aa;
-  font-size: 24px;
+  font-size: 40px;
   margin: 0;
 }
 
 .cliente p {
   color: #333;
-  font-size: 14px;
+  font-size: 20px;
   margin-top: 5px;
   padding-right: 20px;
 }
 
 .pago {
   text-align: right;
-  font-size: 14px;
+  font-size: 40px;
   color: #333;
 }
-
+.pago p{
+  font-size: 20px;
+}
 .titulo-pago {
   color: #00b4aa;
   font-weight: bold;
@@ -244,7 +254,7 @@ body {
 
 .texto-gracias h1 {
   color: #00b2a9;
-  font-size: 35px;
+  font-size: 60px;
   font-weight: bolder;
   margin: 0;
   width: 30%;
@@ -262,26 +272,6 @@ body {
   text-align: center;
 }
 
-/*  @media (max-width: 992px) {
-  .contenedor {
-    grid-template-columns: 1fr;
-    width: 95%;
-  }
-  .encabezado {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    height: auto;
-    margin-bottom: 20px;
-  }
-  .datos-factura h1 {
-    font-size: 30px;
-  }
-  .etiqueta{
-    font-size: 15px;
-  }
-
-} */
 @media (max-width: 992px) {
   .contenedor {
     grid-template-columns: 1fr;
@@ -367,12 +357,17 @@ body {
 
   .tabla {
     margin: 0;
-    margin-bottom: 10px;
+    
   }
   .tabla th,
   .tabla td {
-    font-size: 10px;
-    padding: 5px;
+    
     text-align: center;
+  }
+  .contenedor{
+    width: 100%;
+  }
+  .texto-gracias h1{
+    font-size: 50PX;
   }
 }
